@@ -1,6 +1,7 @@
 using AutoMapper;
 using ECommerce.Api.Products.Db;
 using ECommerce.Api.Products.Interfaces;
+using ECommerce.Api.Products.Providers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -21,8 +22,7 @@ namespace ECommerce.Api.Products
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddScoped<IProductsProvider, IProductsProvider>();
+        {            
             services.AddAutoMapper(typeof(Startup));
 
             services.AddDbContext<ProductDbContext>(opt =>
@@ -31,6 +31,8 @@ namespace ECommerce.Api.Products
             });
 
             services.AddControllers();
+
+            services.AddScoped<IProductsProvider, ProductsProvider>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

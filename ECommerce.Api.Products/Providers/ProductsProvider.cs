@@ -2,6 +2,7 @@
 using ECommerce.Api.Products.Db;
 using ECommerce.Api.Products.Interfaces;
 using ECommerce.Api.Products.Models;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Internal;
 using Microsoft.Extensions.Logging;
 using System;
@@ -28,7 +29,9 @@ namespace ECommerce.Api.Products.Providers
 
         private void SeedData()
         {
+#pragma warning disable EF1001 // Internal EF Core API usage.
             if (!dbContext.Products.Any())
+#pragma warning restore EF1001 // Internal EF Core API usage.
             {
                 dbContext.Products.Add(new Db.Product() { Id = 1, Name = "Keyboard", Price = 20, Inventory = 100 });
                 dbContext.Products.Add(new Db.Product() { Id = 2, Name = "Mouse", Price = 5, Inventory = 200 });
@@ -43,7 +46,48 @@ namespace ECommerce.Api.Products.Providers
 
         public async Task<(bool IsSuccess, IEnumerable<ProductModel> products, string ErrorMessage)> GetProductAsync()
         {
-            throw new NotImplementedException();
+            try
+            {
+                var products = await dbContext.Products.ToListAsync();
+
+#pragma warning disable EF1001 // Internal EF Core API usage.
+                if (products != null && products.Any())
+#pragma warning restore EF1001 // Internal EF Core API usage.
+                {
+                    var result = mapper.Map<IEnumerable<Product>, IEnumerable<ProductModel>>(products);
+
+                    return (true, result, null);
+                }
+                return (false, null, "Not Found");
+            }
+            catch (Exception ex)
+            {
+                logger?.LogError(ex.ToString());
+
+                return (false, null, ex.Message);
+            }
+        }
+
+        public async Task<(bool IsSuccess, ProductModel product, string ErrorMessage)> GetProductByIdAsync(int id)
+        {
+            try
+            {
+                var prod = await dbContext.Products.FirstOrDefaultAsync(p => p.Id == id);
+
+                if (prod != null)
+                {
+                    var result = mapper.Map<Product, ProductModel>(prod);
+
+                    return (true, result, null);
+                }
+                return (false, null, "Not Found");
+            }
+            catch (Exception ex)
+            {
+                logger?.LogError(ex.ToString());
+
+                return (false, null, ex.Message);
+            }
         }
     }
 }
