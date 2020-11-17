@@ -1,4 +1,5 @@
-﻿using ECommerce.Api.Orders.Models;
+﻿using ECommerce.Api.Orders.Db;
+using ECommerce.Api.Orders.Models;
 
 namespace ECommerce.Api.Orders.Profiles
 {
@@ -6,8 +7,8 @@ namespace ECommerce.Api.Orders.Profiles
     {
         public OrderProfile()
         {
-            CreateMap<Db.Order, OrderModel>();
-            CreateMap<Db.OrderItem, OrderItemModel>();
+            CreateMap<Order, OrderModel>();
+            CreateMap<OrderItem, OrderItemModel>();
         }
     }
 }

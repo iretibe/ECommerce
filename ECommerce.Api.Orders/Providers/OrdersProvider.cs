@@ -96,7 +96,7 @@ namespace ECommerce.Api.Orders.Providers
 
                 if (orders != null && orders.Any())
                 {
-                    var result = mapper.Map<IEnumerable<Db.Order>, IEnumerable<OrderModel>>(orders);
+                    var result = mapper.Map<IEnumerable<Order>, IEnumerable<OrderModel>>(orders);
 
                     return (true, result, null);
                 }
