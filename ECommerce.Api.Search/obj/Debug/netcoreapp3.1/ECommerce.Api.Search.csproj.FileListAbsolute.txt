@@ -16,8 +16,6 @@ C:\PROJECTS\ECommerce\ECommerce.Api.Search\obj\Debug\netcoreapp3.1\staticwebasse
 C:\PROJECTS\ECommerce\ECommerce.Api.Search\obj\Debug\netcoreapp3.1\ECommerce.Api.Search.dll
 C:\PROJECTS\ECommerce\ECommerce.Api.Search\obj\Debug\netcoreapp3.1\ECommerce.Api.Search.pdb
 C:\PROJECTS\ECommerce\ECommerce.Api.Search\obj\Debug\netcoreapp3.1\ECommerce.Api.Search.genruntimeconfig.cache
-C:\PROJECTS\ECommerce\ECommerce.Api.Search\obj\Debug\netcoreapp3.1\ECommerce.Api.Search.csproj.CoreCompileInputs.cache
-C:\PROJECTS\ECommerce\ECommerce.Api.Search\obj\Debug\netcoreapp3.1\ECommerce.Api.Search.MvcApplicationPartsAssemblyInfo.cache
 C:\PROJECTS\ECommerce\ECommerce.Api.Search\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
 C:\PROJECTS\ECommerce\ECommerce.Api.Search\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\PROJECTS\ECommerce\ECommerce.Api.Search\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
@@ -32,3 +30,5 @@ C:\PROJECTS\ECommerce\ECommerce.Api.Search\bin\Debug\netcoreapp3.1\Microsoft.Ext
 C:\PROJECTS\ECommerce\ECommerce.Api.Search\bin\Debug\netcoreapp3.1\Polly.dll
 C:\PROJECTS\ECommerce\ECommerce.Api.Search\bin\Debug\netcoreapp3.1\Polly.Extensions.Http.dll
 C:\PROJECTS\ECommerce\ECommerce.Api.Search\obj\Debug\netcoreapp3.1\ECommerce.Api.Search.csproj.CopyComplete
+C:\PROJECTS\ECommerce\ECommerce.Api.Search\obj\Debug\netcoreapp3.1\ECommerce.Api.Search.csproj.CoreCompileInputs.cache
+C:\PROJECTS\ECommerce\ECommerce.Api.Search\obj\Debug\netcoreapp3.1\ECommerce.Api.Search.MvcApplicationPartsAssemblyInfo.cache

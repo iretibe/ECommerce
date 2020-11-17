@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tM+LhTi/o3mrZVRIeO7omWim7KwvHDEjoAHmBB9EI1aDVjS/Rv3gAzZFZ5p8N6r1E6y8vRg5EdzrjWAgr7/bnQ==",
+  "dgSpecHash": "rHloVmGfuVE87sLg4Q8ntyjnW08q6Qladf0DFXoPXptIbEl4W3LcRx35FWcxe6z1UeDH/0eyxMK4qNRXHbSC+A==",
   "success": true,
   "projectFilePath": "C:\\PROJECTS\\ECommerce\\ECommerce.Api.Search\\ECommerce.Api.Search.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "C:\\Users\\Somad\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.9\\microsoft.extensions.logging.abstractions.3.1.9.nupkg.sha512",
     "C:\\Users\\Somad\\.nuget\\packages\\microsoft.extensions.options\\3.1.9\\microsoft.extensions.options.3.1.9.nupkg.sha512",
     "C:\\Users\\Somad\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.9\\microsoft.extensions.primitives.3.1.9.nupkg.sha512",
+    "C:\\Users\\Somad\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
     "C:\\Users\\Somad\\.nuget\\packages\\polly\\7.1.0\\polly.7.1.0.nupkg.sha512",
     "C:\\Users\\Somad\\.nuget\\packages\\polly.extensions.http\\3.0.0\\polly.extensions.http.3.0.0.nupkg.sha512"
   ],

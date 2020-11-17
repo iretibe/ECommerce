@@ -36,6 +36,6 @@ C:\PROJECTS\ECommerce\ECommerce.Api.Orders\bin\Debug\netcoreapp3.1\Microsoft.Ext
 C:\PROJECTS\ECommerce\ECommerce.Api.Orders\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 C:\PROJECTS\ECommerce\ECommerce.Api.Orders\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 C:\PROJECTS\ECommerce\ECommerce.Api.Orders\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\PROJECTS\ECommerce\ECommerce.Api.Orders\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\PROJECTS\ECommerce\ECommerce.Api.Orders\obj\Debug\netcoreapp3.1\ECommerce.Api.Orders.csproj.CoreCompileInputs.cache
 C:\PROJECTS\ECommerce\ECommerce.Api.Orders\obj\Debug\netcoreapp3.1\ECommerce.Api.Orders.MvcApplicationPartsAssemblyInfo.cache
-C:\PROJECTS\ECommerce\ECommerce.Api.Orders\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
